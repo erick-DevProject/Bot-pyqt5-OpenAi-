@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InterfaceChat</class>
+ <widget class="QMainWindow" name="InterfaceChat">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>848</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="ContainerChat" native="true">
+      <property name="styleSheet">
+       <string notr="true">#ContainerChat{
+	
+	background-color:rgb(33, 33, 33);
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,10,0,0,1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="ButtonNewChat">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>34</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	border-radius:5px;
+	font-weight:700;
+	background:rgb(63, 63, 63);
+	color:rgb(255, 255, 255);
+	margin:1px;
+}
+QPushButton:hover{
+margin:0px;
+}</string>
+            </property>
+            <property name="text">
+             <string>New Chat</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>355</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+font-size:25px;
+font-weight:700;
+	color: rgb(180, 180, 180);
+}</string>
+            </property>
+            <property name="text">
+             <string>ChatCrafter</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="styleSheet">
+             <string notr="true">QScrollArea, QScrollArea #scrollAreaWidgetContentsMessages{
+background:transparent;
+border:none;
+}
+QLabel {
+	font-size:17px;
+}</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContentsMessages">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>848</width>
+               <height>362</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>2</number>
+              </property>
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>0</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_10" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="minimumSize">
+                    <size>
+                     <width>36</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>36</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="interface.qrc">:/icons/SolarUserCircleBold.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="indent">
+                    <number>0</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_11" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <widget class="QLabel" name="label_5">
+                      <property name="font">
+                       <font>
+                        <pointsize>-1</pointsize>
+                        <weight>50</weight>
+                        <italic>false</italic>
+                        <bold>false</bold>
+                        <underline>false</underline>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	color: rgb(193, 193, 193)
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>asdasd</string>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                      <property name="indent">
+                       <number>0</number>
+                      </property>
+                      <property name="textInteractionFlags">
+                       <set>Qt::TextSelectableByMouse</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_4" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>36</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>36</width>
+                     <height>36</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="pixmap">
+                    <pixmap resource="interface.qrc">:/icons/RiRobot2Fill.png</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="indent">
+                    <number>0</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_9" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="font">
+                       <font>
+                        <pointsize>-1</pointsize>
+                        <weight>50</weight>
+                        <italic>false</italic>
+                        <bold>false</bold>
+                        <underline>false</underline>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	color: rgb(193, 193, 193)
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Este código creará una ventana con un botón cuyo texto está alineado a la izquierda. asd sd swdfe sdfwef sdfwedf wedfwef wefwf</string>
+                      </property>
+                      <property name="scaledContents">
+                       <bool>true</bool>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                      <property name="margin">
+                       <number>0</number>
+                      </property>
+                      <property name="indent">
+                       <number>0</number>
+                      </property>
+                      <property name="textInteractionFlags">
+                       <set>Qt::TextSelectableByMouse</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelGenerateResponse">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color: rgb(186, 186, 186);
+	font-weight:700;
+	font-size:15px;
+}</string>
+         </property>
+         <property name="text">
+          <string>     Generando respuesta...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_8" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="15,0">
+          <property name="spacing">
+           <number>9</number>
+          </property>
+          <property name="leftMargin">
+           <number>12</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="enterMessage">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+	background-color:rgb(75, 75, 75);
+	height:40px;
+	border-radius:20px;
+	padding: 0px 10px 0px 20px;
+	color: rgb(235, 235, 235);
+	font-size:16px;
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Envia un mensaje a ChatCrafter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="createCompletion">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	border:none;
+	background:transparent;
+	margin:1px;
+}
+QPushButton:hover{
+margin:0px;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="interface.qrc">
+              <normaloff>:/icons/MingcuteSendFill.png</normaloff>:/icons/MingcuteSendFill.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="autoDefault">
+             <bool>true</bool>
+            </property>
+            <property name="default">
+             <bool>true</bool>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionguardar">
+   <property name="text">
+    <string>guardar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="interface.qrc"/>
+ </resources>
+ <connections/>
+</ui>

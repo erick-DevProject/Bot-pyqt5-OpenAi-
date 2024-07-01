@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>LineMdLoadingTwotoneLoop.svg</file>
+    <file>RiRobot2Fill.png</file>
+    <file>SolarUserCircleBold.png</file>
+    <file>MingcuteSendFill.png</file>
+    <file>MaterialSymbolsChatAddOnRounded.png</file>
+    <file>MdiTrashCan.png</file>
+    <file>MaterialSymbolsCheckBoxOutlineBlank.png</file>
+    <file>MaterialSymbolsCheckBoxOutlineRounded.png</file>
+    <file>MdiApple.png</file>
+    <file>MdiFacebook.png</file>
+    <file>Candado.png</file>
+    <file>MdiEmail.png</file>
+  </qresource>
+</RCC>
